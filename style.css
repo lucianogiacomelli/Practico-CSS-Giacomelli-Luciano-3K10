@@ -1,0 +1,188 @@
+.body{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    background-color: #bef7f7;
+    padding: 20px;
+}
+.box{
+    padding: 20px;
+    background-color: rgb(215, 243, 238);
+    border-radius: 1rem;
+    margin: 20px;
+    align-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+.titulo{
+    background-color: rgb(132, 195, 197);
+    padding: 0.4rem;
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.line{
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, #333, #333, #333);
+    margin: 20px 0;
+}
+.p1{
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: justify;
+}
+.blockquote {
+    font-size: 20px;
+    text-align: left;
+    background-color: #d4d4d4;
+    padding: 8px;
+    margin: 8px 0;
+    border-left: 6px solid #8e989e;
+}
+.box1{
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+    margin: 20px;
+    border-radius: 20px;
+    border:solid rgb(134, 133, 133);
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3) ;
+}
+.box2{
+    padding: 20px;
+    background-color: rgb(228, 198, 117);
+    text-align: left;
+    margin: 20px;
+    border-radius: 10px;
+    border: double rgb(0, 0, 0);
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.3) ;
+}
+.relativo {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 40px; /* Margen inferior suficiente para evitar solapamientos */
+}
+
+.absoluto {
+    position: absolute;
+    bottom: -25px ;
+    right: 10px;
+    background-color: #e4cc6f;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mover{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 10px;
+    animation: mover 2.5s infinite;
+    padding: 20px;
+    margin: 50px;
+}
+.animacion{
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    transition: 1.0s;
+}
+.animacion:hover{
+    cursor: pointer;
+    background-color: rgb(139, 209, 236);
+    width: 250px;
+    height: 250px;
+}
+@keyframes mover{
+    0%  {
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translate(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@media (max-width: 768px){
+    
+    .main{
+        background-color: #ecbef7;
+        width: 90%;
+        padding: 10px;
+    }
+    .h1{
+        font-size: 0.2rem;
+    }
+    .titulo{
+        background-color: rgb(132, 147, 197);
+    padding: 0.4rem;
+    color: aliceblue;
+    font-size: 1vw;
+    text-align: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .box{
+        padding: 10px;
+    background-color: rgb(219, 215, 243);
+    border-radius: 0.5rem;
+    margin: 10px;
+    align-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3); 
+    }
+    @keyframes mover{
+        0%  {
+            transform: translateX(0px);
+        }
+        50%{
+            transform: translate(100px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+}
+.containerGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 0.2rem;
+    justify-content: center;
+    
+}
+.grid-item{
+    padding: 5px;
+    background-color: rgb(151, 240, 223);
+    border-radius: 0.5rem;
+    margin: 5px;
+    align-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    height: 30px;
+    border: #9fe2e2 solid;
+}
+.footer{
+    background-color: rgb(132, 195, 197);
+    padding: 20px;
+    color: aliceblue;
+    font-size: 15px;
+    text-align: end;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: max-content;
+}
